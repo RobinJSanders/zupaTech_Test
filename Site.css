@@ -1,54 +1,179 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+body{
+	background-color:#444444;
+	color: White; 
+	
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+a{
+	color: #DDD;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
-
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-    text-align: center;
-}
-
-.theme
+a:hover
 {
-color:white;
-background-color:#404040;
-font-family:'Arial';
+	color: #FFF;
 }
 
-#carousel {
-    width: 100% !important;
-    height: 150px !important;
-    background-color: #ff0000;
-    overflow: visible;
-    white-space: nowrap;
+
+.cover-container {
+	height: auto;
+	width: auto;
+	white-space: nowrap;
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
-    #carousel .slide {
-        display: inline-block;
-        !important;
+.cover-item {
+	position: relative;
+	display: inline-block;
+	margin: 8px 8px;
+	width: auto;
+	height: auto;
+	vertical-align: bottom;
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner-image{
+	height: 400px;
+	width: auto;
+	cursor: pointer;
+}
+
+.poster-image{
+	height: auto;
+	width: 150px;
+}
+
+.poster-name{
+	width: 150px;
+	height:auto;
+	text-align: center;
+	display: inline-block;
+}
+
+
+.blue-background
+{
+	background-color: blue; 
+	width: auto;
+}
+
+
+.fadein img{
+	opacity:1;
+	transition: 1s ease;
+
+}
+
+.fadein img:hover{
+	opacity:0.8;
+	transition: 1s ease;
+	background-color:blue;
+}
+
+
+.btn-theme
+{
+	color:white;
+	background-color:#404040;
+	font-family:'Arial';
+}
+
+.nav-link{
+	color: white;
+}
+
+
+.active{
+	color: white;
+	background-color:blue;
+	border-radius: 10px;
+
+}
+
+
+.horizontal_dotted_line{
+	border-bottom: 1px dotted white;
+	width: auto;
+	margin-top: 20px;
+	margin-bottom:20px;
+} 
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
     }
+}

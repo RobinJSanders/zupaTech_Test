@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Store</title>
+	<!--Imports -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="Site.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<!-- Modal for banner images-->
+	<div id="myModal" class="modal">
+		<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+		<img class="modal-content" id="img01">
+		<div id="caption"></div>
+	</div>
+</head>
+<body>
+<!--The navbar -->
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark flex-nowrap">
+		<span class="navbar-brand w-100">
+			<button type="button" class="btn-theme"><</button>
+			<button type="button" class="btn-theme">></button>
+			<button class="btn btn-theme dropdown-toggle theme" type="button" data-toggle="dropdown">
+				Movie
+				<span class="caret"></span>
+			</button>
+		</span>
+		<div class="navbar-collapse collapse w-100 justify-content-center" id="navbar5">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Library</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Rented</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Unwatched</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link active " href="#">Store<span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+		</div>
+		<div class="w-100"></div>
+		<button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbar5">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</nav>
+	<!-- Scrollable Banner -->
+	<div class="row-fluid">
+		<div class="col-lg-12 col-md-10 ">
+			<div class="cover-container">
+				<div class="cover-item blue-background fadein"><img  src="./images/Banner_Baby_Driver.jpg" 
+					alt="<h2>Baby Driver</h2>
+					<p>Baby Driver is a getaway driver in Atlanta, Georgia. When he was a child, a car accident killed his parents and left him with tinnitus, which he blocks out by listening to music on his iPod. He ferries crews of robbers assembled by Doc, a criminal mastermind, to pay off a debt he incurred after stealing one of Doc's cars. Between jobs, he creates remixes from snippets of conversations he records and cares for his deaf foster father Joseph. At a diner, he meets a waitress, Debora, and they start dating.</p>"
+					class="banner-image" />
+				</div>
+				<div class="cover-item blue-background fadein"><img  src="./images/Banner_Wonder_Woman.jpg" 
+					alt="<h2>Wonder Woman</h2>
+					<p>In present-day Paris, Diana receives a photographic plate from Wayne Enterprises of herself and four men taken during World War I, prompting her to recall her past. Daughter of Queen Hippolyta, Diana was raised on the hidden island of Themyscira, home to the Amazonian warrior women created by Zeus to protect mankind. Hippolyta shares the Amazonian history with Diana, including how Ares, Zeus's son, became jealous of humanity and orchestrated its destruction. When the other gods attempted to stop him, Ares killed all but Zeus, who used the last of his power to wound Ares and force his retreat (thus dying in the process). Zeus left the Amazons the island and a weapon, the <q>Godkiller</q>, to prepare them for Ares' return.</p>" 
+					class="banner-image"/>
+				</div>
+				<div class="cover-item blue-background fadein"><img  src="./images/Banner_Captain_Underpants.jpg"  
+					alt="<h2>Captain Underpants</h2>
+					<p>In the city of Piqua, Ohio, two fourth-grade friends and next-door neighbors named George Beard (Kevin Hart) and Harold Hutchins (Thomas Middleditch) are the pranksters at their school, Jerome Horwitz Elementary School. They excessively pull numerous pranks on the cruel teachers, many of which are directed at their mean-spirited principal, Mr. Benjamin <q>Benny</q> Krupp (Ed Helms), putting the two at odds with him. The duo also create comic books about a superhero named Captain Underpants, who fights crime while wearing underwear and a cape. They distribute these to their schoolmates through a comic company called Treehouse Comix Inc., located in their treehouse. George and Harold's pranks come to an apparent end after they're caught tampering with a toilet invention, the Turbo Toilet 2000, made by the school's local snitch and intellectual, Melvin Sneedly (Jordan Peele), on video. Finally having solid proof of the boys' antics, Mr. Krupp excitedly prepares to annihilate their friendship by putting them in separate classes.</p>" 
+					class="banner-image"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="Modal.js">
+	</script>
+	<br/>
+	<br/>
+	<!-- Movie Poster Links -->
+	<div class="row" style="margin-left: 10px">
+		<div class="col-lg-9">
+			<h4>New & Noteworthy</h4>
+			<div class="row">
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_Wonder_Woman.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">Wonder Woman (2017)</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_GotG.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">Guardians of the Galaxy Vol. 2</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_Captain_Underpants.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">Captain Underpants</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_Baby_Driver.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">Baby Driver</td>
+					</tr>
+				</table>
+
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_Beatriz_at_Dinner.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">Beatriz at Dinner (2017)</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_Lion_King.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">The Lion King</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_Swallows_And_Amazons.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">Swallows and Amazons</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Aliens_Covernant.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">Alien Covenant</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_King_Arthur.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">King Athur</td>
+					</tr>
+				</table>
+
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_Transformers.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">Transformers: The Last Light</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_The_Mummy.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">The Mummy (2017)</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_Chuck.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">Chuck</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_Mclaren.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">McLarren</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_Born_In_China.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">Born In China</td>
+					</tr>
+				</table>
+
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_Batman.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">Batman And Harley Quinn</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_The_Big_Sick.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">The Big Sick</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_The_Hero.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td><a href="#">The Hero</td>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+						<th><div class="blue-background fadein"><a href="#"><img src="./images/Poster_Food_Evolution.jpg" class="poster-image"></a></div></th>
+					</tr>
+					<tr>
+						<td class="poster-name">Food Evolution</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!-- Links on right hand side -->
+		<div class="col-lg-3">
+			<h3>Movies</h3>
+			<h4>All Genres</h4>
+			<h5>MOVIES QUICK LINKS</h5>
+			<table>
+				<tr>
+					<td style="width: 200px"><a href="#">Redeem</td>
+					<td><a href="#">Account</td>
+				</tr>
+				<tr>
+					<td ><a href="#">Send iTunes Gifts</td>
+					<td><a href="#">Support</td>
+				</tr>
+			</table>
+			<div class="horizontal_dotted_line"></div>
+			<a href="#">Purchased<br>
+				<a href="#">My wish list    
+					<div class="horizontal_dotted_line"></div>
+					<a href="#">Learn More About iTunes Extras
+						<div class="horizontal_dotted_line"></div>
+						<a href="#">Top All-Time Movies</a><br>
+						<a href="#">Indie New Releases</a><br>
+						<a href="#">Pre-Order Movies</a><br>
+						<a href="#">Movie Bundles</a><br>
+						<a href="#">Essentials </a><br>
+						<a href="#">Editors' Choice</a><br>
+						<a href="#">Movies With Audio Descriptions</a><br>
+						<a href="#">Movies Just Added</a><br>
+						<a href="#">Theoratical Trailers</a>
+					</div>
+				</body>
+				</html>
+
+
+
